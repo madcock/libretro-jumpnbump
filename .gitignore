@@ -1,2 +1,3 @@
 jumpnbump_libretro.so
 *.o
+*.a

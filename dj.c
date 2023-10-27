@@ -26,7 +26,11 @@ typedef struct {
 channel_info_t channelinfo[MAX_CHANNELS];
 
 /* Sample rate in samples/second */
+#if !defined(SF2000)
 int audio_rate = 44100;
+#else
+int audio_rate = 11025;
+#endif
 int global_sfx_volume = 0;
 /*
 // This function loops all active (internal) sound
